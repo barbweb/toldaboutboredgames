@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>(told about) Bored Games</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- HERO -->
+   <div class="hero-header">
+  <h1 class="hero-title">(told about) Bored games&nbsp;</h1>
+</div>
+<header class="hero">
+  <img src="img/baanner.png" alt="banner">
+  <video id="hero-video" loop playsinline preload="auto">
+    <source src="img/videobanner.mp4" type="video/mp4">
+  </video>
+  <div class="hero-click-group">
+    <div class="hero-click" title="Toggle hero video">
+      <img src="img/cursor1.gif" alt="hero click">
+    </div>
+    <button class="heroclicktwo" type="button">Play merch</button>
+  </div>
+  <video id="videotwo" loop playsinline muted>
+    <source src="img/videomerch.mp4" type="video/mp4">
+  </video>
+</header>
+
+    <!-- NAV -->
+    <nav class="nav">
+      <button onclick="show('live', this)">
+        <img src="img/2.gif" alt="News">
+          <span class="nav-label">News</span>
+      </button>
+      <button onclick="show('audio', this)">
+        <img src="img/3.gif" alt="Spotify">
+         <span class="nav-label">Spotify</span>
+      </button>
+      <button onclick="show('tube', this)">
+        <img src="img/4.gif" alt="Youtube">
+         <span class="nav-label">Youtube</span>
+      </button>
+      <button onclick="show('insta', this)">
+        <img src="img/6.gif" alt="Instagram">
+         <span class="nav-label">Instagram</span>
+      </button>
+    </nav>
+
+    <!-- MAIN -->
+    <main id="app"></main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <h5>&copy; 2026 (told about) Bored Games.</h5>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
